@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lt.mikasdu.ui.controller.UsersController">
+
+    <VBox alignment="CENTER">
+        <Label styleClass="headerLabel" text="Users list"/>
+    </VBox>
+
+    <VBox alignment="CENTER">
+        <Label text="User: Admin Password: admin Id: 1"/>
+        <Label text="User: User Password: user Id: 2"/>
+        <Label text="User: User1 Password: user1 Id: 3"/>
+    </VBox>
+
+</VBox>

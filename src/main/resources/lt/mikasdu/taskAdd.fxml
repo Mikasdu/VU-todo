@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="lt.mikasdu.ui.controller.TaskAddController"
+           prefWidth="250.0">
+
+    <VBox>
+        <HBox alignment="CENTER">
+            <Label styleClass="headerLabel" fx:id="headerLabelCategory" text="TEST"/>
+        </HBox>
+        <VBox styleClass="box-borders">
+            <VBox>
+                <Label text="Task description"/>
+                <TextField fx:id="taskDescription"/>
+                <Label/>
+                <Label text="User Id"/>
+                <TextField fx:id="userId"/>
+                <Label/>
+                <Label text="Status"/>
+                <ComboBox fx:id="taskStatus" promptText="Select">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Active" />
+                            <String fx:value="Deleted" />
+                            <String fx:value="Completed" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <Label/>
+            </VBox>
+        </VBox>
+        <VBox>
+            <HBox style="-fx-padding: 5;" spacing="15" alignment="CENTER">
+                <Button styleClass="button-edit" text="Išsaugoti" onAction="#buttonSave"/>
+                <Button fx:id="cancelButton" styleClass="button-remove" text="Atšaukti" onAction="#buttonCancel"/>
+            </HBox>
+        </VBox>
+    </VBox>
+
+</StackPane>

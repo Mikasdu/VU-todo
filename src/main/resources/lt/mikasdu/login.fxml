@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lt.mikasdu.ui.controller.LoginController">
+
+        <HBox alignment="CENTER">
+            <Label styleClass="headerLabel">Please login</Label>
+        </HBox>
+        <VBox styleClass="box-borders">
+            <VBox alignment="CENTER">
+                <Label>User Name</Label>
+                <TextField fx:id="inputName"/>
+                <Label>Password</Label>
+                <PasswordField fx:id="inputPassword"/>
+            </VBox>
+            <Label> * Default user Admin, password admin</Label>
+        </VBox>
+
+        <HBox style="-fx-padding: 5;" spacing="15" alignment="CENTER">
+            <Button styleClass="button" text="Login" onAction="#buttonLogin"/>
+        </HBox>
+</VBox>
